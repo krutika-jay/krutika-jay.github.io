@@ -561,7 +561,7 @@ body.scroll-effects .scroll-entry:not(.in-view){opacity:0;transform:translateY(2
     linear-gradient(180deg,var(--sunset-apricot),var(--sunset-peach) 19%,var(--sunset-clay) 56%,var(--sunset-mist) 82%,var(--sunset-gold));
 }
 .invitation-content .scratch-section{
-  background:radial-gradient(ellipse at 50% 10%,var(--sunset-gold),transparent 78%);
+  background:linear-gradient(165deg,#fffaf2,#fff6e7 62%,var(--sunset-glow));
 }
 .invitation-content .sacred-page{
   background:radial-gradient(ellipse at 50% 38%,var(--sunset-glow),transparent 75%);
@@ -1165,13 +1165,15 @@ function paintFoil() {
     brush.drawImage(previous, 0, 0, width, height);
     return;
   }
-  const gold = brush.createLinearGradient(0, 0, width, height);
-  gold.addColorStop(0, '#b78353');
-  gold.addColorStop(.45, '#f3d9a2');
-  gold.addColorStop(1, '#b88858');
-  brush.fillStyle = gold;
+  const palette = getComputedStyle(scratch);
+  const sunset = brush.createLinearGradient(0, 0, width, height);
+  sunset.addColorStop(0, palette.getPropertyValue('--sunset-glow').trim());
+  sunset.addColorStop(.38, palette.getPropertyValue('--sunset-peach').trim());
+  sunset.addColorStop(.72, palette.getPropertyValue('--sunset-clay').trim());
+  sunset.addColorStop(1, '#dda99d');
+  brush.fillStyle = sunset;
   brush.fillRect(0, 0, width, height);
-  brush.fillStyle = '#fff7d972';
+  brush.fillStyle = '#fffaf266';
   for (let y = 4; y < height; y += 7) {
     for (let x = 5 + (y % 11); x < width; x += 11) brush.fillRect(x, y, 1, 1);
   }
