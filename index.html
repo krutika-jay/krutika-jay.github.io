@@ -577,9 +577,11 @@ body.scroll-effects .scroll-entry:not(.in-view){opacity:0;transform:translateY(2
     radial-gradient(ellipse at 12% 35%,#fed2a28c,transparent 56%),
     linear-gradient(180deg,var(--sunset-apricot),var(--sunset-peach) 19%,var(--sunset-clay) 56%,var(--sunset-mist) 82%,var(--sunset-gold));
 }
-.invitation-content .scratch-section,
-.invitation-content .royal-portraits{
+.invitation-content .scratch-section{
   background:linear-gradient(165deg,#fffaf2,#fff6e7 62%,var(--sunset-glow));
+}
+.invitation-content .royal-portraits{
+  background:linear-gradient(165deg,#fff0db,#fff3e1 62%,var(--sunset-glow));
 }
 .invitation-content .sacred-page{
   background:radial-gradient(ellipse at 50% 38%,var(--sunset-glow),transparent 75%);
@@ -601,7 +603,7 @@ body.scroll-effects .scroll-entry:not(.in-view){opacity:0;transform:translateY(2
 }
 .invitation-content #celebrations{
   background:
-    linear-gradient(180deg,#fff5e7,rgba(255,245,231,0)) top / 100% clamp(120px,18vw,200px) no-repeat,
+    radial-gradient(ellipse at 0% 0%,#fee8cc99,transparent 72%) top left / 100% clamp(260px,35vw,440px) no-repeat,
     radial-gradient(ellipse at 14% 24%,#fed2a28c,transparent 61%);
 }
 .invitation-content .event-banner{--scroll-gold:#9a5b32}
@@ -683,7 +685,7 @@ body.scroll-effects .scroll-entry:not(.in-view){opacity:0;transform:translateY(2
 </section>
 
 <section class="countdown-section"><div class="eyebrow" data-t="countdownTitle"></div><div class="countdown" aria-label="Wedding countdown"></div></section>
-<section class="schedule reveal" id="celebrations">
+<section class="schedule" id="celebrations">
   <div class="eyebrow" data-t="together"></div>
   <h2 data-t="celebrations"></h2>
   <div class="ornament" aria-hidden="true">❦</div>
@@ -1094,7 +1096,9 @@ const entryObserver = new IntersectionObserver(entries => {
   }
 }, {threshold: .08});
 document.body.classList.add('scroll-effects');
-document.querySelectorAll('.invitation-card, .countdown-section, .scratch-section, .schedule, .venue, .family-section.reveal').forEach(section => {
+document.querySelectorAll(
+  '.invitation-card, .countdown-section > *, .scratch-section > *, #celebrations > :not(.royal-procession), .venue, .family-section.reveal'
+).forEach(section => {
   section.classList.add('scroll-entry');
   entryObserver.observe(section);
 });
