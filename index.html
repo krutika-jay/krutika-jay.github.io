@@ -81,7 +81,9 @@ body.invitation-open .invitation-card{animation:invitation-arrive 1.3s cubic-bez
 .family-section{padding:70px 35px 60px;background:radial-gradient(ellipse at top,#fffaf0,#faf3e8);border-bottom:1px solid #bb925733}
 .nimantrak-names{text-align:center;color:#78513c;font-size:clamp(16px,3vw,22px);line-height:1.5}
 .nimantrak-names p{margin:6px 0}
-.family-section h2{margin:8px 0 12px;color:#78513c}.family-intro{font-size:20px;color:#8b7157;margin:0 auto 30px}
+.family-section h2{margin:8px 0 12px;color:#78513c}
+.family-section .family-side-title{margin:32px 0 0;color:#78513c;font-size:clamp(20px,3.2vw,26px);font-weight:500;line-height:1.35}
+.family-side-title + .family-couples{margin-top:8px}.family-intro{font-size:20px;color:#8b7157;margin:0 auto 30px}
 .family-ancestor{max-width:620px;margin:0 auto 30px;padding:18px 12px;border-top:1px solid #bb925755;border-bottom:1px solid #bb925755;font-size:24px;color:#886631}
 .family-lists{display:grid;grid-template-columns:1fr 1fr;gap:22px 45px;max-width:850px;margin:auto}
 .family-section ul{list-style:none;padding:0;margin:0}.family-section li{font-size:21px;line-height:1.7;padding:12px 0;color:#654536;overflow-wrap:anywhere}
@@ -677,7 +679,7 @@ body.scroll-effects .scroll-entry:not(.in-view){opacity:0;transform:translateY(2
 <h2 id="nimantrak-title" data-t="nimantrakTitle"></h2>
 <div class="nimantrak-names"><p data-t="nimantrakFather"></p><p data-t="nimantrakMother"></p></div>
 </section>
-<section class="family-section" aria-labelledby="family-title"><div class="ornament" aria-hidden="true">❦</div><h2 id="family-title" data-t="familyTitle"></h2><p class="family-intro" data-t="familyIntro"></p><div class="family-couples"><table><tbody id="family-couples"></tbody></table></div><div class="family-children"><h3 class="eyebrow" data-t="youngTitle"></h3><ul class="ordered-family-list" id="family-young"></ul></div><div class="family-group"><h3 class="eyebrow" data-t="maternalTitle"></h3><ul class="ordered-family-list" id="family-maternal"></ul></div><div class="family-greeting"><svg class="prayer-hands" viewBox="0 0 180 184" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<section class="family-section" aria-labelledby="family-title"><div class="ornament" aria-hidden="true">❦</div><h2 id="family-title" data-t="familyTitle"></h2><p class="family-intro" data-t="familyIntro"></p><h3 class="family-side-title" data-t="paternalTitle"></h3><div class="family-couples"><table><tbody id="family-couples"></tbody></table></div><div class="family-children"><h4 class="eyebrow" data-t="youngTitle"></h4><ul class="ordered-family-list" id="family-young"></ul></div><h3 class="family-side-title" data-t="maternalTitle"></h3><div class="family-couples"><table><tbody id="family-maternal"></tbody></table></div><div class="family-children"><h4 class="eyebrow" data-t="maternalYoungTitle"></h4><ul class="ordered-family-list" id="family-maternal-young"></ul></div><div class="family-greeting"><svg class="prayer-hands" viewBox="0 0 180 184" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 <path d="M90 22c-1-10-10-12-14-3L61 66c-3 10-9 17-15 26-7 11-6 24-13 37l-13 22 32 19 22-36c10-12 16-23 16-39V22Z"/>
 <path d="M90 22c1-10 10-12 14-3l15 47c3 10 9 17 15 26 7 11 6 24 13 37l13 22-32 19-22-36c-10-12-16-23-16-39V22Z"/>
 <path d="m78 33-13 42c-2 7-5 12-9 17M82 48 72 81M102 33l13 42c2 7 5 12 9 17M98 48l10 33"/>
@@ -693,7 +695,7 @@ Object.keys(sacredCopy).forEach(code=>Object.assign(copy[code],sacredCopy[code])
 copy.en.ganeshPrayer='|| Shree Ganeshaya Namah ||';copy.hi.ganeshPrayer='|| श्री गणेशाय नमः ||';copy.gu.ganeshPrayer='|| શ્રી ગણેશાય નમઃ ||';
 const familyCopy = {
   "en": {
-    "familyTitle": "Our Family (Paternal)",
+    "familyTitle": "Our Family",
     "familyIntro": "Together with our family, we warmly welcome you.",
     "nimantrakTitle": "Hosts",
     "nimantrakFather": "Shree Hiteshbhai Bhupatlal Desai",
@@ -740,20 +742,30 @@ const familyCopy = {
       "Master Yash Sanjaybhai Desai"
     ],
     "youngTitle": "Excited to Celebrate",
-    "maternalTitle": "Maternal Family",
+    "maternalTitle": "Maternal",
     "maternal": [
-      "Late Kumarlal Himmatlal Shah",
-      "Sarojben Kumarlal Shah",
-      "Miss Smitaben Himmatlal Shah",
-      "Shree Jasminbhai Kumarlal Shah",
-      "Smt. Pujaben Jasminbhai Shah",
+      [
+        "Late Kumarlal Himmatlal Shah",
+        "Sarojben Kumarlal Shah"
+      ],
+      [
+        "Miss Smitaben Himmatlal Shah"
+      ],
+      [
+        "Shree Jasminbhai Kumarlal Shah",
+        "Smt. Pujaben Jasminbhai Shah"
+      ]
+    ],
+    "familyGreeting": "Jai Shree Krishna from the Desai Family",
+    "paternalTitle": "Paternal",
+    "maternalYoungTitle": "Overjoyed to mark the occasion",
+    "maternalYoung": [
       "Master Jainam Jasminbhai Shah",
       "Kumari Vanshika Jasminbhai Shah"
-    ],
-    "familyGreeting": "Jai Shree Krishna from the Desai Family"
+    ]
   },
   "gu": {
-    "familyTitle": "અમારો પરિવાર (પિતૃપક્ષ)",
+    "familyTitle": "અમારો પરિવાર",
     "familyIntro": "અમારા પરિવાર તરફથી આપનું હાર્દિક સ્વાગત છે.",
     "nimantrakTitle": "નિમંત્રક",
     "nimantrakFather": "શ્રી હિતેશભાઈ ભૂપતલાલ દેસાઈ",
@@ -802,18 +814,28 @@ const familyCopy = {
     "youngTitle": "થનગનવા ઉત્સુક",
     "maternalTitle": "મોસાળ પક્ષ",
     "maternal": [
-      "સ્વ. કુમારલાલ હિંમતલાલ શાહ",
-      "સરોજબેન કુમારલાલ શાહ",
-      "કુ. સ્મિતાબેન હિંમતલાલ શાહ",
-      "શ્રી જાસ્મિનભાઈ કુમારલાલ શાહ",
-      "શ્રીમતી પૂજાબેન જાસ્મિનભાઈ શાહ",
+      [
+        "સ્વ. કુમારલાલ હિંમતલાલ શાહ",
+        "સરોજબેન કુમારલાલ શાહ"
+      ],
+      [
+        "કુ. સ્મિતાબેન હિંમતલાલ શાહ"
+      ],
+      [
+        "શ્રી જાસ્મિનભાઈ કુમારલાલ શાહ",
+        "શ્રીમતી પૂજાબેન જાસ્મિનભાઈ શાહ"
+      ]
+    ],
+    "familyGreeting": "દેસાઈ પરિવારના જય શ્રી કૃષ્ણ",
+    "paternalTitle": "પિતૃપક્ષ",
+    "maternalYoungTitle": "ઉલ્લાસભેર ઉજવવા તૈયાર",
+    "maternalYoung": [
       "ચિ. જૈનમ જાસ્મિનભાઈ શાહ",
       "કુમારી વંશિકા જાસ્મિનભાઈ શાહ"
-    ],
-    "familyGreeting": "દેસાઈ પરિવારના જય શ્રી કૃષ્ણ"
+    ]
   },
   "hi": {
-    "familyTitle": "हमारा परिवार (पितृ पक्ष)",
+    "familyTitle": "हमारा परिवार",
     "familyIntro": "हमारे परिवार की ओर से आपका हार्दिक स्वागत है।",
     "nimantrakTitle": "आमंत्रणकर्ता",
     "nimantrakFather": "श्री हितेशभाई भूपतलाल देसाई",
@@ -862,36 +884,48 @@ const familyCopy = {
     "youngTitle": "उत्सव मनाने को उत्सुक",
     "maternalTitle": "मातृ पक्ष",
     "maternal": [
-      "स्व. कुमारलाल हिम्मतलाल शाह",
-      "सरोजबेन कुमारलाल शाह",
-      "कु. स्मिताबेन हिम्मतलाल शाह",
-      "श्री जास्मिनभाई कुमारलाल शाह",
-      "श्रीमती पूजाबेन जास्मिनभाई शाह",
+      [
+        "स्व. कुमारलाल हिम्मतलाल शाह",
+        "सरोजबेन कुमारलाल शाह"
+      ],
+      [
+        "कु. स्मिताबेन हिम्मतलाल शाह"
+      ],
+      [
+        "श्री जास्मिनभाई कुमारलाल शाह",
+        "श्रीमती पूजाबेन जास्मिनभाई शाह"
+      ]
+    ],
+    "familyGreeting": "देसाई परिवार की ओर से जय श्री कृष्ण",
+    "paternalTitle": "पितृ पक्ष",
+    "maternalYoungTitle": "इस अवसर को मनाने के लिए हर्षित",
+    "maternalYoung": [
       "चि. जैनम जास्मिनभाई शाह",
       "कुमारी वंशिका जास्मिनभाई शाह"
-    ],
-    "familyGreeting": "देसाई परिवार की ओर से जय श्री कृष्ण"
+    ]
   }
 };
 for (const [code, family] of Object.entries(familyCopy)) {
-  const { paternal, young, maternal, ...labels } = family;
+  const { paternal, young, maternal, maternalYoung, ...labels } = family;
   Object.assign(copy[code], labels);
 }
 
 function renderFamily() {
   const family = familyCopy[lang];
-  const rows = family.paternal.map(names => {
-    const row = document.createElement('tr');
-    for (const name of names) {
-      const cell = row.insertCell();
-      cell.colSpan = names.length === 1 ? 2 : 1;
-      cell.textContent = name;
-    }
-    return row;
-  });
-  document.querySelector('#family-couples').replaceChildren(...rows);
+  for (const [selector, groups] of [['#family-couples', family.paternal], ['#family-maternal', family.maternal]]) {
+    const rows = groups.map(names => {
+      const row = document.createElement('tr');
+      for (const name of names) {
+        const cell = row.insertCell();
+        cell.colSpan = names.length === 1 ? 2 : 1;
+        cell.textContent = name;
+      }
+      return row;
+    });
+    document.querySelector(selector).replaceChildren(...rows);
+  }
 
-  for (const [selector, names] of [['#family-young', family.young], ['#family-maternal', family.maternal]]) {
+  for (const [selector, names] of [['#family-young', family.young], ['#family-maternal-young', family.maternalYoung]]) {
     const items = names.map(name => {
       const item = document.createElement('li');
       item.textContent = name;
