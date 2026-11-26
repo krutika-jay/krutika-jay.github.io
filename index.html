@@ -677,7 +677,7 @@ body.scroll-effects .scroll-entry:not(.in-view){opacity:0;transform:translateY(2
 <h2 id="nimantrak-title" data-t="nimantrakTitle"></h2>
 <div class="nimantrak-names"><p data-t="nimantrakFather"></p><p data-t="nimantrakMother"></p></div>
 </section>
-<section class="family-section" aria-labelledby="family-title"><div class="ornament" aria-hidden="true">❦</div><h2 id="family-title" data-t="familyTitle"></h2><p class="family-intro" data-t="familyIntro"></p><div class="family-couples"><table><tbody id="family-couples"></tbody></table></div><div class="family-children"><ul class="ordered-family-list" id="family-young"></ul></div><div class="family-group"><h3 class="eyebrow" data-t="extraFamily0"></h3><ul><li data-t="extraFamily1"></li><li data-t="extraFamily2"></li><li data-t="extraFamily3"></li><li data-t="extraFamily4"></li></ul></div><div class="family-group"><h3 class="eyebrow" data-t="extraFamily5"></h3><ul><li data-t="extraFamily6"></li></ul></div><div class="family-greeting"><svg class="prayer-hands" viewBox="0 0 180 184" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+<section class="family-section" aria-labelledby="family-title"><div class="ornament" aria-hidden="true">❦</div><h2 id="family-title" data-t="familyTitle"></h2><p class="family-intro" data-t="familyIntro"></p><div class="family-couples"><table><tbody id="family-couples"></tbody></table></div><div class="family-children"><ul class="ordered-family-list" id="family-young"></ul></div><div class="family-group"><h3 class="eyebrow" data-t="maternalTitle"></h3><ul class="ordered-family-list" id="family-maternal"></ul></div><div class="family-greeting"><svg class="prayer-hands" viewBox="0 0 180 184" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
 <path d="M90 22c-1-10-10-12-14-3L61 66c-3 10-9 17-15 26-7 11-6 24-13 37l-13 22 32 19 22-36c10-12 16-23 16-39V22Z"/>
 <path d="M90 22c1-10 10-12 14-3l15 47c3 10 9 17 15 26 7 11 6 24 13 37l13 22-32 19-22-36c-10-12-16-23-16-39V22Z"/>
 <path d="m78 33-13 42c-2 7-5 12-9 17M82 48 72 81M102 33l13 42c2 7 5 12 9 17M98 48l10 33"/>
@@ -691,17 +691,223 @@ gu:{blessing:'પરિવારજનોના શુભ આશીર્વા�
 const sacredCopy={"gu":{"invocation":"॥ આઈ શ્રી ખોડિયાર મા ॥","invitationTitle":"પરિણય ઉત્સવ","sacredIntro":"સહર્ષ ખુશાલી સાથે જણાવવાનું કે અમારા કુળદેવી આઈ શ્રી ખોડિયાર માતાજી અને પરમપિતા પરમેશ્વરની અસીમ કૃપાથી તથા વડીલોના આશીર્વાદથી<span class=\"hometown\">ગામ – નેસડી (હાલ અમદાવાદ) નિવાસી</span>","groomParents":"શ્રીમતી રીટાબેન તથા શ્રી સુરેશભાઈ કાનજીભાઈ પટેલના","sonOf":"સુપુત્ર","groomFormal":"ચિ. જય","weddingUnion":"ના શુભવિવાહ","brideFormal":"ચિ. કૃતિકા","brideHome":"ગામ – જેતલસર (હાલ કલકત્તા) નિવાસી","brideParents":"શ્રીમતી પારુલબેન તથા શ્રી હિતેશભાઈ ભૂપતલાલ દેસાઈની","daughterOf":"સુપુત્રી સાથે","auspiciousDate":"સંવત ૨૦૮૩ ના માગશર વદ ત્રીજ ને શનિવાર, તા. ૨૬/૧૨/૨૦૨૬ ના શુભદિને નિર્ધાર્યા છે.","familyInvite":"તો આ શુભ પ્રસંગે આપશ્રી સહકુટુંબ સહિત પધારી શોભામાં અભિવૃદ્ધિ કરશોજી.","sacredClosing":"॥ આઈ શ્રી ખોડિયાર મા ॥","countdownTitle":"મંગલ મિલનની પ્રતીક્ષામાં","coverTitle":"પરિણય ઉત્સવ","coverNames":"જય અને કૃતિકા","coverOpen":"આમંત્રણ ખોલવા મુદ્રાને સ્પર્શ કરો"},"hi":{"invocation":"॥ आई श्री खोडियार माँ ॥","invitationTitle":"परिणय उत्सव","sacredIntro":"अत्यंत हर्ष एवं उल्लास के साथ सूचित करते हैं कि हमारी कुलदेवी आई श्री खोडियार माताजी एवं परमपिता परमेश्वर की असीम कृपा तथा बड़ों के आशीर्वाद से<span class=\"hometown\">गाँव – नेसडी (वर्तमान निवास अहमदाबाद) निवासी</span>","groomParents":"श्रीमती रीटाबेन एवं श्री सुरेशभाई कानजीभाई पटेल के","sonOf":"सुपुत्र","groomFormal":"चि. जय","weddingUnion":"का शुभविवाह","brideFormal":"चि. कृतिका","brideHome":"गाँव – जेतलसर (वर्तमान निवास कोलकाता) निवासी","brideParents":"श्रीमती पारुलबेन एवं श्री हितेशभाई भूपतलाल देसाई की","daughterOf":"सुपुत्री के साथ","auspiciousDate":"संवत २०८३, मार्गशीर्ष कृष्ण पक्ष तृतीया, शनिवार, दिनांक २६/१२/२०२६ के शुभ दिन पर निश्चित हुआ है।","familyInvite":"इस शुभ अवसर पर आप सपरिवार पधारकर समारोह की शोभा बढ़ाएँ।","sacredClosing":"॥ आई श्री खोडियार माँ ॥","countdownTitle":"मंगल मिलन की प्रतीक्षा में","coverTitle":"परिणय उत्सव","coverNames":"जय एवं कृतिका","coverOpen":"आमंत्रण खोलने के लिए मुहर छुएँ"},"en":{"invocation":"॥ Aai Shri Khodiyar Maa ॥","invitationTitle":"A Sacred Wedding Celebration","sacredIntro":"With great joy, through the boundless grace of our family deity, Aai Shri Khodiyar Mataji, and the Almighty, and with the blessings of our elders, we announce the auspicious wedding.<span class=\"hometown\">Village: Nesadi (currently residing in Ahmedabad)</span>","groomParents":"the beloved son of Smt. Ritaben and Shri Sureshbhai Kanjibhai Patel","sonOf":"","groomFormal":"Jay","weddingUnion":"with","brideFormal":"Krutika","brideHome":"Village: Jetalsar (currently residing in Kolkata)","brideParents":"the beloved daughter of Smt. Parulben and Shri Hiteshbhai Bhupatlal Desai","daughterOf":"","auspiciousDate":"The wedding has been set for the auspicious day of Saturday, 26 December 2026 (Magshar Vad Trij, Samvat 2083).","familyInvite":"We warmly invite you and your family to grace this auspicious occasion with your presence and blessings.","sacredClosing":"॥ Aai Shri Khodiyar Maa ॥","countdownTitle":"Until Our Sacred Union","coverTitle":"THE WEDDING OF","coverNames":"Jay & Krutika","coverOpen":"TAP THE SEAL TO OPEN"}};
 Object.keys(sacredCopy).forEach(code=>Object.assign(copy[code],sacredCopy[code]));
 copy.en.ganeshPrayer='|| Shree Ganeshaya Namah ||';copy.hi.ganeshPrayer='|| श्री गणेशाय नमः ||';copy.gu.ganeshPrayer='|| શ્રી ગણેશાય નમઃ ||';
-copy.gu.familyGreeting='ઠુંમર પરિવારના જય શ્રી કૃષ્ણ';copy.hi.familyGreeting='थुम्मर परिवार की ओर से जय श्री कृष्ण';copy.en.familyGreeting='Jai Shree Krishna from the Thummar Family';
-const familyCopy={"en":{"familyTitle":"Our Family","familyIntro":"Together with our family, we warmly welcome you.","ancestor":"Late Kanjibhai Parbatbhai Patel","men":["Shri Vijaybhai Kanjibhai Patel","Shri Ashokbhai Kanjibhai Patel","Shri Pratik Vijaybhai Patel","Shri Ronak Vijaybhai Patel"],"women":["Late Smt. Fuliben Kanjibhai Patel","Smt. Ramaben Vijaybhai Patel","Smt. Ranjanben Ashokbhai Patel","Smt. Binal Pratikbhai Patel","Smt. Kajal Ronakbhai Patel"],"youngTitle":"With Love","young":["Mr. Jeet Sureshbhai Patel","Miss Dhruvanshi Ashokbhai Patel","Mr. Rudra Ronakbhai Patel","Mr. Om Ronakbhai Patel","Miss Aarya Pratikbhai Patel","Miss Pahal Pratikbhai Patel"],"nimantrakTitle":"Hosts","nimantrakFather":"Shri Sureshbhai Kanjibhai Patel","nimantrakMother":"Smt. Ritaben Sureshbhai Patel"},"gu":{"familyTitle":"અમારો પરિવાર","familyIntro":"અમારા પરિવાર તરફથી આપનું હાર્દિક સ્વાગત છે.","ancestor":"સ્વ. કાનજીભાઈ પરબતભાઈ પટેલ","men":["શ્રી વિજયભાઈ કાનજીભાઈ પટેલ","શ્રી અશોકભાઈ કાનજીભાઈ પટેલ","શ્રી પ્રતિક વિજયભાઈ પટેલ","શ્રી રોનક વિજયભાઈ પટેલ"],"women":["ગં. સ્વ. ફૂલીબેન કાનજીભાઈ પટેલ","શ્રીમતી રમાબેન વિજયભાઈ પટેલ","શ્રીમતી રંજનબેન અશોકભાઈ પટેલ","શ્રીમતી બિનલ પ્રતિકભાઈ પટેલ","શ્રીમતી કાજલ રોનકભાઈ પટેલ"],"youngTitle":"સ્નેહ સાથે","young":["ચિ. જીત સુરેશભાઈ પટેલ","કુ. ધ્રુવાંશી અશોકભાઈ પટેલ","ચિ. રુદ્ર રોનકભાઈ પટેલ","ચિ. ઓમ રોનકભાઈ પટેલ","કુ. આર્યા પ્રતિકભાઈ પટેલ","કુ. પહલ પ્રતિકભાઈ પટેલ"],"nimantrakTitle":"નિમંત્રક","nimantrakFather":"શ્રી સુરેશભાઈ કાનજીભાઈ પટેલ","nimantrakMother":"શ્રીમતી રીટાબેન સુરેશભાઈ પટેલ"},"hi":{"familyTitle":"हमारा परिवार","familyIntro":"हमारे परिवार की ओर से आपका हार्दिक स्वागत है।","ancestor":"स्व. कानजीभाई परबतभाई पटेल","men":["श्री विजयभाई कानजीभाई पटेल","श्री अशोकभाई कानजीभाई पटेल","श्री प्रतीक विजयभाई पटेल","श्री रोनक विजयभाई पटेल"],"women":["स्व. श्रीमती फूलीबेन कानजीभाई पटेल","श्रीमती रमाबेन विजयभाई पटेल","श्रीमती रंजनबेन अशोकभाई पटेल","श्रीमती बिनल प्रतीकभाई पटेल","श्रीमती काजल रोनकभाई पटेल"],"youngTitle":"सस्नेह","young":["चि. जीत सुरेशभाई पटेल","कु. ध्रुवांशी अशोकभाई पटेल","चि. रुद्र रोनकभाई पटेल","चि. ओम रोनकभाई पटेल","कु. आर्या प्रतीकभाई पटेल","कु. पहल प्रतीकभाई पटेल"],"nimantrakTitle":"आमंत्रणकर्ता","nimantrakFather":"श्री सुरेशभाई कानजीभाई पटेल","nimantrakMother":"श्रीमती रीटाबेन सुरेशभाई पटेल"}};
-for(const code of Object.keys(familyCopy)){copy[code].familyTitle=familyCopy[code].familyTitle;copy[code].familyIntro=familyCopy[code].familyIntro;copy[code].youngTitle=familyCopy[code].youngTitle;
-  const {nimantrakTitle,nimantrakFather,nimantrakMother}=familyCopy[code];
-  Object.assign(copy[code],{nimantrakTitle,nimantrakFather,nimantrakMother});
+const familyCopy = {
+  "en": {
+    "familyTitle": "Our Family (Paternal)",
+    "familyIntro": "Together with our family, we warmly welcome you.",
+    "nimantrakTitle": "Hosts",
+    "nimantrakFather": "Shree Hiteshbhai Bhupatlal Desai",
+    "nimantrakMother": "Smt. Parulben Hiteshbhai Desai",
+    "paternal": [
+      [
+        "Late Ramniklal Amritlal Desai",
+        "Late Shantaben Ramniklal Desai"
+      ],
+      [
+        "Late Bhupatlal Amritlal Desai",
+        "Rasilaben Bhupatlal Desai"
+      ],
+      [
+        "Shree Jiteshbhai Ramniklal Desai",
+        "Smt. Kavitaben Jiteshbhai Desai"
+      ],
+      [
+        "Shree Jayeshbhai Bhupatlal Desai",
+        "Smt. Shilpaben Jayeshbhai Desai"
+      ],
+      [
+        "Shree Jigneshbhai Ramniklal Desai",
+        "Smt. Pujaben Jigneshbhai Desai"
+      ],
+      [
+        "Shree Sanjaybhai Bhupatlal Desai",
+        "Smt. Vaishaliben Sanjaybhai Desai"
+      ],
+      [
+        "Shree Jineshbhai Ramniklal Desai"
+      ],
+      [
+        "Shree Mukesh Kumar Desai",
+        "Smt. Ritaben Mukeshkumar Desai"
+      ]
+    ],
+    "young": [
+      "Master Raj Jayeshbhai Desai",
+      "Miss Priyanka Hiteshbhai Desai",
+      "Miss Anjalli Jigneshbhai Desai",
+      "Miss Tanavi Jigneshbhai Desai",
+      "Master Yash Sanjaybhai Desai"
+    ],
+    "maternalTitle": "Maternal Family",
+    "maternal": [
+      "Late Kumarlal Himmatlal Shah",
+      "Sarojben Kumarlal Shah",
+      "Miss Smitaben Himmatlal Shah",
+      "Shree Jasminbhai Kumarlal Shah",
+      "Smt. Pujaben Jasminbhai Shah",
+      "Shree Sanjaybhai Vora",
+      "Smt. Archanaben Sanjaybhai Vora",
+      "Master Jinesh Sanjaybhai Vora",
+      "Master Jainam Jasminbhai Shah",
+      "Kumari Vanshika Jasminbhai Shah",
+      "Miss Nancy Shah",
+      "Smt. Khushbu"
+    ],
+    "familyGreeting": "Jai Shree Krishna from the Desai Family"
+  },
+  "gu": {
+    "familyTitle": "અમારો પરિવાર (પિતૃપક્ષ)",
+    "familyIntro": "અમારા પરિવાર તરફથી આપનું હાર્દિક સ્વાગત છે.",
+    "nimantrakTitle": "નિમંત્રક",
+    "nimantrakFather": "શ્રી હિતેશભાઈ ભૂપતલાલ દેસાઈ",
+    "nimantrakMother": "શ્રીમતી પારુલબેન હિતેશભાઈ દેસાઈ",
+    "paternal": [
+      [
+        "સ્વ. રમણીકલાલ અમૃતલાલ દેસાઈ",
+        "સ્વ. શાંતાબેન રમણીકલાલ દેસાઈ"
+      ],
+      [
+        "સ્વ. ભૂપતલાલ અમૃતલાલ દેસાઈ",
+        "રસીલાબેન ભૂપતલાલ દેસાઈ"
+      ],
+      [
+        "શ્રી જિતેશભાઈ રમણીકલાલ દેસાઈ",
+        "શ્રીમતી કવિતાબેન જિતેશભાઈ દેસાઈ"
+      ],
+      [
+        "શ્રી જયેશભાઈ ભૂપતલાલ દેસાઈ",
+        "શ્રીમતી શિલ્પાબેન જયેશભાઈ દેસાઈ"
+      ],
+      [
+        "શ્રી જિગ્નેશભાઈ રમણીકલાલ દેસાઈ",
+        "શ્રીમતી પૂજાબેન જિગ્નેશભાઈ દેસાઈ"
+      ],
+      [
+        "શ્રી સંજયભાઈ ભૂપતલાલ દેસાઈ",
+        "શ્રીમતી વૈશાલીબેન સંજયભાઈ દેસાઈ"
+      ],
+      [
+        "શ્રી જિનેશભાઈ રમણીકલાલ દેસાઈ"
+      ],
+      [
+        "શ્રી મુકેશ કુમાર દેસાઈ",
+        "શ્રીમતી રીટાબેન મુકેશકુમાર દેસાઈ"
+      ]
+    ],
+    "young": [
+      "ચિ. રાજ જયેશભાઈ દેસાઈ",
+      "કુ. પ્રિયંકા હિતેશભાઈ દેસાઈ",
+      "કુ. અંજલિ જિગ્નેશભાઈ દેસાઈ",
+      "કુ. તાનવી જિગ્નેશભાઈ દેસાઈ",
+      "ચિ. યશ સંજયભાઈ દેસાઈ"
+    ],
+    "maternalTitle": "મોસાળ પક્ષ",
+    "maternal": [
+      "સ્વ. કુમારલાલ હિંમતલાલ શાહ",
+      "સરોજબેન કુમારલાલ શાહ",
+      "કુ. સ્મિતાબેન હિંમતલાલ શાહ",
+      "શ્રી જાસ્મિનભાઈ કુમારલાલ શાહ",
+      "શ્રીમતી પૂજાબેન જાસ્મિનભાઈ શાહ",
+      "શ્રી સંજયભાઈ વોરા",
+      "શ્રીમતી અર્ચનાબેન સંજયભાઈ વોરા",
+      "ચિ. જિનેશ સંજયભાઈ વોરા",
+      "ચિ. જૈનમ જાસ્મિનભાઈ શાહ",
+      "કુમારી વંશિકા જાસ્મિનભાઈ શાહ",
+      "કુ. નેન્સી શાહ",
+      "શ્રીમતી ખુશબૂ"
+    ],
+    "familyGreeting": "દેસાઈ પરિવારના જય શ્રી કૃષ્ણ"
+  },
+  "hi": {
+    "familyTitle": "हमारा परिवार (पितृ पक्ष)",
+    "familyIntro": "हमारे परिवार की ओर से आपका हार्दिक स्वागत है।",
+    "nimantrakTitle": "आमंत्रणकर्ता",
+    "nimantrakFather": "श्री हितेशभाई भूपतलाल देसाई",
+    "nimantrakMother": "श्रीमती पारुलबेन हितेशभाई देसाई",
+    "paternal": [
+      [
+        "स्व. रमणीकलाल अमृतलाल देसाई",
+        "स्व. शांताबेन रमणीकलाल देसाई"
+      ],
+      [
+        "स्व. भूपतलाल अमृतलाल देसाई",
+        "रसीलाबेन भूपतलाल देसाई"
+      ],
+      [
+        "श्री जितेशभाई रमणीकलाल देसाई",
+        "श्रीमती कविताबेन जितेशभाई देसाई"
+      ],
+      [
+        "श्री जयेशभाई भूपतलाल देसाई",
+        "श्रीमती शिल्पाबेन जयेशभाई देसाई"
+      ],
+      [
+        "श्री जिग्नेशभाई रमणीकलाल देसाई",
+        "श्रीमती पूजाबेन जिग्नेशभाई देसाई"
+      ],
+      [
+        "श्री संजयभाई भूपतलाल देसाई",
+        "श्रीमती वैशालीबेन संजयभाई देसाई"
+      ],
+      [
+        "श्री जिनेशभाई रमणीकलाल देसाई"
+      ],
+      [
+        "श्री मुकेश कुमार देसाई",
+        "श्रीमती रीटाबेन मुकेशकुमार देसाई"
+      ]
+    ],
+    "young": [
+      "चि. राज जयेशभाई देसाई",
+      "कु. प्रियंका हितेशभाई देसाई",
+      "कु. अंजलि जिग्नेशभाई देसाई",
+      "कु. तानवी जिग्नेशभाई देसाई",
+      "चि. यश संजयभाई देसाई"
+    ],
+    "maternalTitle": "मातृ पक्ष",
+    "maternal": [
+      "स्व. कुमारलाल हिम्मतलाल शाह",
+      "सरोजबेन कुमारलाल शाह",
+      "कु. स्मिताबेन हिम्मतलाल शाह",
+      "श्री जास्मिनभाई कुमारलाल शाह",
+      "श्रीमती पूजाबेन जास्मिनभाई शाह",
+      "श्री संजयभाई वोरा",
+      "श्रीमती अर्चनाबेन संजयभाई वोरा",
+      "चि. जिनेश संजयभाई वोरा",
+      "चि. जैनम जास्मिनभाई शाह",
+      "कुमारी वंशिका जास्मिनभाई शाह",
+      "कु. नैंसी शाह",
+      "श्रीमती खुशबू"
+    ],
+    "familyGreeting": "देसाई परिवार की ओर से जय श्री कृष्ण"
+  }
+};
+for (const [code, family] of Object.entries(familyCopy)) {
+  const { paternal, young, maternal, ...labels } = family;
+  Object.assign(copy[code], labels);
 }
-function renderFamily(){const f=familyCopy[lang];const gents=[f.ancestor,...f.men];document.querySelector('#family-couples').innerHTML=gents.map((name,i)=>'<tr><td>'+name+'</td><td>'+f.women[i]+'</td></tr>').join('');document.querySelector('#family-young').innerHTML=f.young.map(name=>'<li>'+name+'</li>').join('');}
-Object.assign(copy.en,{gentsTitle:'Gents',kidsTitle:'Kids',ladiesTitle:'Ladies'});Object.assign(copy.gu,{gentsTitle:'વડીલો અને પુરુષો',kidsTitle:'બાળકો',ladiesTitle:'મહિલાઓ'});Object.assign(copy.hi,{gentsTitle:'परिवार के पुरुष',kidsTitle:'बच्चे',ladiesTitle:'महिलाएँ'});
-const extraFamily = {"gu":["મોસાળ પક્ષ","શ્રી જયંતિભાઈ રણછોડભાઈ પટેલ","શ્રી ભાવેશ જયંતિભાઈ પટેલ","ચિ. વંશ ભાવેશભાઈ પટેલ","ચિ. ધૈર્ય ભાવેશભાઈ પટેલ","વ્હાલા ભાણેજ","શ્રી જિમ્મી અશોકભાઈ પટેલ"],"hi":["मातृ पक्ष","श्री जयंतीभाई रणछोड़भाई पटेल","श्री भावेश जयंतीभाई पटेल","चि. वंश भावेशभाई पटेल","चि. धैर्य भावेशभाई पटेल","प्रिय भांजे","श्री जिम्मी अशोकभाई पटेल"],"en":["Maternal Family","Shree Jayantibhai Ranchodbhai Patel","Shree Bhavesh Jayantibhai Patel","Mr. Vansh Bhaveshbhai Patel","Mr. Dhairya Bhaveshbhai Patel","Dear Nephew","Shree Jimmy Ashokbhai Patel"]};
-for (const [language, entries] of Object.entries(extraFamily)) {
-  entries.forEach((entry, index) => { copy[language]['extraFamily' + index] = entry; });
+
+function renderFamily() {
+  const family = familyCopy[lang];
+  const rows = family.paternal.map(names => {
+    const row = document.createElement('tr');
+    for (const name of names) {
+      const cell = row.insertCell();
+      cell.colSpan = names.length === 1 ? 2 : 1;
+      cell.textContent = name;
+    }
+    return row;
+  });
+  document.querySelector('#family-couples').replaceChildren(...rows);
+
+  for (const [selector, names] of [['#family-young', family.young], ['#family-maternal', family.maternal]]) {
+    const items = names.map(name => {
+      const item = document.createElement('li');
+      item.textContent = name;
+      return item;
+    });
+    document.querySelector(selector).replaceChildren(...items);
+  }
 }
 copy.en.palaceOpen = 'Open the invitation';
 copy.hi.palaceOpen = 'निमंत्रण खोलें';
