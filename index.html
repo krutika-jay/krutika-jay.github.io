@@ -567,7 +567,7 @@ body.scroll-effects .scroll-entry:not(.in-view){opacity:0;transform:translateY(2
   background:radial-gradient(ellipse at 50% 38%,var(--sunset-glow),transparent 75%);
 }
 .invitation-content .invitation-card{
-  background:linear-gradient(150deg,var(--sunset-glow),var(--sunset-peach) 72%,var(--sunset-clay));
+  background:linear-gradient(150deg,#fffbf4,var(--sunset-glow) 58%,var(--sunset-peach));
 }
 .invitation-content .countdown-section{
   color:var(--sunset-ink);
@@ -582,7 +582,7 @@ body.scroll-effects .scroll-entry:not(.in-view){opacity:0;transform:translateY(2
   background:linear-gradient(150deg,var(--sunset-peach),var(--sunset-clay));
 }
 .invitation-content .royal-portraits{
-  background:radial-gradient(ellipse at 76% 45%,#fed2a28c,transparent 75%);
+  background:linear-gradient(165deg,#fff4ec,#fae5e6 56%,#f2d4db);
 }
 .invitation-content #celebrations{
   background:radial-gradient(ellipse at 14% 24%,#fed2a28c,transparent 61%);
@@ -1165,12 +1165,11 @@ function paintFoil() {
     brush.drawImage(previous, 0, 0, width, height);
     return;
   }
-  const palette = getComputedStyle(scratch);
   const sunset = brush.createLinearGradient(0, 0, width, height);
-  sunset.addColorStop(0, palette.getPropertyValue('--sunset-glow').trim());
-  sunset.addColorStop(.38, palette.getPropertyValue('--sunset-peach').trim());
-  sunset.addColorStop(.72, palette.getPropertyValue('--sunset-clay').trim());
-  sunset.addColorStop(1, '#dda99d');
+  sunset.addColorStop(0, '#d7a185');
+  sunset.addColorStop(.38, '#cb927a');
+  sunset.addColorStop(.72, '#bc8177');
+  sunset.addColorStop(1, '#a66b65');
   brush.fillStyle = sunset;
   brush.fillRect(0, 0, width, height);
   brush.fillStyle = '#fffaf266';
